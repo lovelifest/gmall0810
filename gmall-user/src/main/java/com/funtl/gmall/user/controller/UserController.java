@@ -1,6 +1,7 @@
 package com.funtl.gmall.user.controller;
 
 import com.funtl.gmall.user.bean.UmsMember;
+import com.funtl.gmall.user.bean.UmsMemberReceiveAddress;
 import com.funtl.gmall.user.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -36,7 +37,14 @@ public class UserController {
         return UmsMembers;
     }
 
+    @RequestMapping("getReceiveAddressByMemberId")
+    @ResponseBody
+    public List<UmsMemberReceiveAddress> getReceiveAddressByMemberId(String memberId){
+        List<UmsMemberReceiveAddress> umsMemberReceiveAddresses = userService.getReceiveAddressByMemberId(memberId);
 
+
+        return umsMemberReceiveAddresses;
+    }
 
 
 }

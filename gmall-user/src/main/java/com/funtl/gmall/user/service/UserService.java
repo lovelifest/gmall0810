@@ -1,6 +1,7 @@
 package com.funtl.gmall.user.service;
 
 import com.funtl.gmall.user.bean.UmsMember;
+import com.funtl.gmall.user.bean.UmsMemberReceiveAddress;
 
 import java.util.List;
 
@@ -11,4 +12,6 @@ import java.util.List;
 public interface UserService {
 
     List<UmsMember> getAllUser();
+
+    List<UmsMemberReceiveAddress> getReceiveAddressByMemberId(String memberId);
 }
