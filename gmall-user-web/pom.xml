@@ -2,17 +2,16 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
     <parent>
         <groupId>com.funtl.gmall</groupId>
         <artifactId>gmall-parent</artifactId>
         <version>1.0-SNAPSHOT</version>
-
+        <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.funtl.gmall</groupId>
-    <artifactId>gmall-user</artifactId>
+    <artifactId>gmall-user-web</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>gmall-user</name>
+    <name>gmall-user-web</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
@@ -20,38 +19,16 @@
     </properties>
 
     <dependencies>
-
-        <dependency>
-            <groupId>com.funtl.gmall</groupId>
-            <artifactId>gmall-service-util</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.funtl.gmall</groupId>
-            <artifactId>gmall-web-util</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
         <dependency>
             <groupId>com.funtl.gmall</groupId>
             <artifactId>gmall-api</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
-
-        <!--通用mapper-->
         <dependency>
-            <groupId>tk.mybatis</groupId>
-            <artifactId>mapper-spring-boot-starter</artifactId>
-            <version>1.2.3</version>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.springframework.boot</groupId>
-                    <artifactId>spring-boot-starter-jdbc</artifactId>
-                </exclusion>
-            </exclusions>
+            <groupId>com.funtl.gmall</groupId>
+            <artifactId>gmall-web-util</artifactId>
+            <version>1.0-SNAPSHOT</version>
         </dependency>
-
-
     </dependencies>
 
     <build>

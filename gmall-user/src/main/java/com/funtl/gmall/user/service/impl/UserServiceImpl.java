@@ -1,10 +1,12 @@
 package com.funtl.gmall.user.service.impl;
 
-import com.funtl.gmall.user.bean.UmsMember;
-import com.funtl.gmall.user.bean.UmsMemberReceiveAddress;
+
+
+import com.funtl.gmall.bean.UmsMember;
+import com.funtl.gmall.bean.UmsMemberReceiveAddress;
+import com.funtl.gmall.service.UserService;
 import com.funtl.gmall.user.mapper.UmsMemberReceiveAddressMapper;
 import com.funtl.gmall.user.mapper.UserMapper;
-import com.funtl.gmall.user.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

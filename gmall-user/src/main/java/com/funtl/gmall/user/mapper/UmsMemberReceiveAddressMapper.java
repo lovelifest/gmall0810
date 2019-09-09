@@ -1,6 +1,6 @@
 package com.funtl.gmall.user.mapper;
 
-import com.funtl.gmall.user.bean.UmsMemberReceiveAddress;
+import com.funtl.gmall.bean.UmsMemberReceiveAddress;
 import tk.mybatis.mapper.common.Mapper;
 
 /**
